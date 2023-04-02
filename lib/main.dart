@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
 
   int intValue = Random().nextInt(10000)+ 1000;
 
-  String display = "";
+  String display = "Nothing";
   int a = 0;
   // = Random().nextInt(100) + 50;
   final ed = TextEditingController();
@@ -44,6 +44,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(title: Text("Rand Number"),),
         body:Center(
